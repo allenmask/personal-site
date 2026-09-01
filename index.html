@@ -2,433 +2,475 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Allen Mask | Partner at WestCap & Managing Partner, CōLab</title>
-  <meta name="description" content="Personal site of Allen Mask — Partner at WestCap, Managing Partner at CōLab, former leader at Sonos, Airbnb, and Google. Forbes 30 Under 30." />
-  <meta property="og:title" content="Allen Mask | Partner at WestCap & Managing Partner, CōLab" />
-  <meta property="og:description" content="Investor, operator, and creative strategist working at the intersection of capital, brand, and AI transformation." />
-  <meta property="og:type" content="website" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Allen Mask</title>
+  <meta name="description" content="Allen Mask — Partner at WestCap & Managing Partner at CōLab. Former leader at Sonos, Airbnb, Google. Forbes 30 Under 30." />
+  <meta property="og:title" content="Allen Mask" />
+  <meta property="og:description" content="Partner at WestCap & Managing Partner at CōLab. Building durable enterprises across brand, product marketing, and native AI transformation." />
   <meta property="og:url" content="https://allenmask.com" />
   <meta property="og:image" content="https://allenmask.com/assets/allen-mask.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Fonts -->
+  <meta name="twitter:card" content="summary" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet" />
 
   <style>
     :root {
-      --bg: #fafafa;
-      --bg-card: #ffffff;
-      --bg-card-hover: #fcfcfc;
-      --border: #e7e5e4;
-      --border-subtle: #f0eeec;
-      --text: #1c1917;
-      --text-muted: #57534e;
-      --text-subtle: #78716c;
-      --accent: #18181b;
-      --accent-hover: #27272a;
-      --accent-bg: #f4f4f5;
-      --tag-bg: #f5f5f4;
-      --tag-text: #44403c;
-      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
-      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
-      --radius: 16px;
-      --radius-sm: 10px;
+      --bg: #0c0d10;
+      --bg-ambient: radial-gradient(circle at 50% 0%, #1c202a 0%, #0c0d10 70%);
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --card-border: rgba(255, 255, 255, 0.09);
+      --card-hover: rgba(255, 255, 255, 0.09);
+      --card-active: rgba(255, 255, 255, 0.12);
+      --text: #ffffff;
+      --text-muted: #9499a6;
+      --text-dim: #646a79;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.25);
+      --badge-bg: rgba(255, 255, 255, 0.07);
+      --badge-border: rgba(255, 255, 255, 0.12);
+      --badge-text: #e2e8f0;
+      --icon-bg: rgba(255, 255, 255, 0.08);
+      --icon-hover: rgba(255, 255, 255, 0.16);
+      --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.35);
+      --radius: 20px;
+      --radius-sm: 14px;
       --radius-pill: 9999px;
-      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-serif: 'Newsreader', Georgia, serif;
     }
 
-    [data-theme="dark"] {
-      --bg: #09090b;
-      --bg-card: #121215;
-      --bg-card-hover: #18181c;
-      --border: #27272a;
-      --border-subtle: #1f1f23;
-      --text: #f4f4f5;
-      --text-muted: #a1a1aa;
-      --text-subtle: #71717a;
-      --accent: #ffffff;
-      --accent-hover: #e4e4e7;
-      --accent-bg: #27272a;
-      --tag-bg: #18181b;
-      --tag-text: #d4d4d8;
-      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
-      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
-      --shadow-lg: 0 10px 20px -3px rgba(0, 0, 0, 0.5);
+    [data-theme="light"] {
+      --bg: #f4f4f6;
+      --bg-ambient: radial-gradient(circle at 50% 0%, #e8eaf0 0%, #f4f4f6 70%);
+      --card-bg: #ffffff;
+      --card-border: rgba(0, 0, 0, 0.08);
+      --card-hover: #fafafa;
+      --card-active: #f2f2f5;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --text-dim: #94a3b8;
+      --accent: #2563eb;
+      --accent-glow: rgba(37, 99, 235, 0.15);
+      --badge-bg: rgba(0, 0, 0, 0.05);
+      --badge-border: rgba(0, 0, 0, 0.08);
+      --badge-text: #334155;
+      --icon-bg: #ffffff;
+      --icon-hover: #f1f5f9;
+      --shadow-card: 0 6px 24px rgba(0, 0, 0, 0.06);
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      -webkit-tap-highlight-color: transparent;
     }
 
     body {
-      font-family: var(--font-sans);
-      background-color: var(--bg);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      background-image: var(--bg-ambient);
+      background-attachment: fixed;
       color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      transition: background-color 0.25s ease, color 0.25s ease;
-      padding: 0;
-      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 32px 16px 64px;
+      transition: background 0.3s ease, color 0.3s ease;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-      transition: all 0.2s ease;
+    .bio-wrapper {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
 
-    /* Container */
-    .container {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 56px 24px 80px;
-    }
-
-    /* Top Navigation / Controls */
-    .header-nav {
+    /* Top Floating Utility Bar */
+    .top-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 40px;
+      padding: 4px 8px;
     }
 
-    .badge-status {
+    .status-pill {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 7px;
+      background: var(--badge-bg);
+      border: 1px solid var(--badge-border);
       padding: 6px 14px;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
       border-radius: var(--radius-pill);
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: var(--text-muted);
-      box-shadow: var(--shadow-sm);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--badge-text);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
     }
 
-    .pulse-dot {
+    .pulse {
       width: 7px;
       height: 7px;
-      background-color: #10b981;
+      background: #10b981;
       border-radius: 50%;
-      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
-      animation: pulse 2s infinite;
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6);
+      animation: pulse-ring 2s infinite;
     }
 
-    @keyframes pulse {
-      0% {
-        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
-      }
-      70% {
-        box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
-      }
-      100% {
-        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
-      }
+    @keyframes pulse-ring {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6); }
+      70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
     }
 
-    .theme-toggle {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-pill);
-      width: 36px;
-      height: 36px;
+    .top-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--badge-bg);
+      border: 1px solid var(--badge-border);
+      color: var(--text);
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      color: var(--text-muted);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       transition: all 0.2s ease;
-      box-shadow: var(--shadow-sm);
     }
 
-    .theme-toggle:hover {
-      color: var(--text);
-      border-color: var(--text-subtle);
-      transform: translateY(-1px);
+    .btn-icon:hover {
+      background: var(--icon-hover);
+      transform: scale(1.05);
     }
 
-    /* Bio Section */
-    .profile-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 36px 32px;
-      box-shadow: var(--shadow-sm);
-      margin-bottom: 24px;
-    }
-
-    .profile-header {
+    /* Main Bio Profile Header */
+    .profile-hero {
+      text-align: center;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 24px;
-      margin-bottom: 24px;
+      padding: 12px 16px 4px;
     }
 
-    .avatar-wrapper {
+    .avatar-container {
       position: relative;
-      flex-shrink: 0;
+      width: 108px;
+      height: 108px;
+      margin-bottom: 18px;
     }
 
-    .avatar {
-      width: 104px;
-      height: 104px;
+    .avatar-img {
+      width: 100%;
+      height: 100%;
       border-radius: 50%;
       object-fit: cover;
       object-position: center top;
-      border: 2px solid var(--border);
-      box-shadow: var(--shadow-md);
-      display: block;
+      border: 2px solid var(--card-border);
+      box-shadow: 0 8px 24px var(--accent-glow);
     }
 
-    .profile-title h1 {
-      font-size: 1.75rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: var(--text);
-      line-height: 1.2;
-      margin-bottom: 6px;
-    }
-
-    .profile-title .role {
-      font-size: 1rem;
-      font-weight: 500;
-      color: var(--text-muted);
-      line-height: 1.4;
-    }
-
-    .location-tag {
+    .name-title-row {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      margin-top: 8px;
-      font-size: 0.82rem;
-      color: var(--text-subtle);
+      margin-bottom: 6px;
     }
 
-    .bio-text {
-      font-size: 1.02rem;
+    .name-title-row h1 {
+      font-size: 1.65rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+    }
+
+    .verified-check {
+      color: #38bdf8;
+      display: inline-flex;
+    }
+
+    .role-headline {
+      font-size: 0.96rem;
+      font-weight: 600;
       color: var(--text-muted);
-      line-height: 1.65;
-      margin-bottom: 28px;
+      margin-bottom: 10px;
     }
 
-    .bio-text strong {
+    .bio-summary {
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--text-muted);
+      max-width: 400px;
+      margin-bottom: 18px;
+    }
+
+    .bio-summary strong {
       color: var(--text);
       font-weight: 600;
     }
 
-    /* Action Buttons / Social Links */
-    .actions-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    /* Social Pills Row */
+    .social-row {
+      display: flex;
+      justify-content: center;
       gap: 12px;
+      width: 100%;
+      margin-bottom: 10px;
     }
 
-    .btn-action {
+    .social-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text);
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      padding: 11px 16px;
-      border-radius: var(--radius-sm);
-      font-size: 0.88rem;
-      font-weight: 600;
-      transition: all 0.2s ease;
-      cursor: pointer;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .btn-primary {
-      background: var(--text);
-      color: var(--bg);
-      border: 1px solid var(--text);
+    .social-btn:hover {
+      background: var(--card-hover);
+      transform: translateY(-2px);
+      border-color: var(--text-dim);
     }
 
-    .btn-primary:hover {
-      background: var(--accent-hover);
-      transform: translateY(-1px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .btn-secondary {
-      background: var(--bg);
-      color: var(--text);
-      border: 1px solid var(--border);
-    }
-
-    .btn-secondary:hover {
-      background: var(--accent-bg);
-      border-color: var(--text-subtle);
-      transform: translateY(-1px);
-    }
-
-    /* Content Cards / Sections */
-    .section-title {
-      font-size: 0.82rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-subtle);
-      margin: 36px 0 16px;
-      padding-left: 4px;
-    }
-
-    .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-      margin-bottom: 16px;
-      box-shadow: var(--shadow-sm);
-      transition: border-color 0.2s ease, transform 0.2s ease;
-    }
-
-    .card:hover {
-      border-color: var(--text-subtle);
-    }
-
-    /* Experience Timeline Item */
-    .experience-item {
+    /* Links Stack */
+    .links-stack {
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      padding: 18px 0;
-      border-bottom: 1px solid var(--border-subtle);
+      gap: 12px;
+      width: 100%;
     }
 
-    .experience-item:first-child {
-      padding-top: 0;
+    .link-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: var(--shadow-card);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
     }
 
-    .experience-item:last-child {
+    .link-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.03), transparent);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .link-card:hover {
+      background: var(--card-hover);
+      border-color: var(--card-active);
+      transform: translateY(-2px);
+    }
+
+    .link-card:hover::before {
+      opacity: 1;
+    }
+
+    .link-card:active {
+      transform: scale(0.99);
+    }
+
+    .link-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .link-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--icon-bg);
+      border: 1px solid var(--card-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .link-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .link-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    .link-sub {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .link-arrow {
+      color: var(--text-dim);
+      transition: all 0.2s ease;
+      display: flex;
+    }
+
+    .link-card:hover .link-arrow {
+      color: var(--text);
+      transform: translateX(3px) translateY(-3px);
+    }
+
+    /* Expandable / Drawer Section */
+    .drawer-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+
+    .drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 20px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .drawer-header:hover {
+      background: var(--card-hover);
+    }
+
+    .drawer-title-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .drawer-chevron {
+      color: var(--text-dim);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .drawer-card.open .drawer-chevron {
+      transform: rotate(180deg);
+      color: var(--text);
+    }
+
+    .drawer-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s ease;
+      padding: 0 20px;
+    }
+
+    .drawer-card.open .drawer-body {
+      max-height: 800px;
+      padding: 0 20px 20px;
+      border-top: 1px solid var(--card-border);
+    }
+
+    /* Timeline Items in Drawer */
+    .timeline-item {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .timeline-item:last-child {
       border-bottom: none;
-      padding-bottom: 0;
+      padding-bottom: 4px;
     }
 
-    .exp-header {
+    .timeline-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      flex-wrap: wrap;
-      gap: 4px;
+      margin-bottom: 2px;
     }
 
-    .exp-company {
-      font-size: 1.02rem;
+    .timeline-company {
+      font-size: 0.95rem;
       font-weight: 700;
       color: var(--text);
     }
 
-    .exp-date {
-      font-size: 0.82rem;
-      font-weight: 500;
-      color: var(--text-subtle);
-    }
-
-    .exp-role {
-      font-size: 0.92rem;
-      font-weight: 500;
-      color: var(--text-muted);
-    }
-
-    .exp-desc {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      line-height: 1.55;
-      margin-top: 4px;
-    }
-
-    /* Tags */
-    .tag-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 10px;
-    }
-
-    .tag {
-      display: inline-block;
-      padding: 4px 10px;
-      background: var(--tag-bg);
-      color: var(--tag-text);
-      border-radius: var(--radius-pill);
+    .timeline-period {
       font-size: 0.78rem;
+      color: var(--text-dim);
       font-weight: 500;
     }
 
-    /* Editorial Highlight Card */
-    .editorial-card {
-      border-left: 3px solid var(--text);
-      background: var(--bg-card);
-      border-radius: var(--radius);
-      padding: 24px;
-      margin-bottom: 16px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .editorial-quote {
-      font-family: var(--font-serif);
-      font-size: 1.15rem;
-      font-style: italic;
-      color: var(--text);
-      line-height: 1.5;
-      margin-bottom: 12px;
-    }
-
-    .editorial-author {
+    .timeline-role {
       font-size: 0.85rem;
       font-weight: 600;
       color: var(--text-muted);
+      margin-bottom: 4px;
     }
 
-    /* Grid of Quick Bio Cards */
-    .bio-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
-
-    .mini-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 18px;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      transition: all 0.2s ease;
-    }
-
-    .mini-card:hover {
-      transform: translateY(-2px);
-      border-color: var(--text-subtle);
-    }
-
-    .mini-card-label {
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-subtle);
-    }
-
-    .mini-card-value {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--text);
-      line-height: 1.35;
-    }
-
-    .mini-card-sub {
+    .timeline-desc {
       font-size: 0.82rem;
       color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Quote Block */
+    .quote-block {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 20px;
+      backdrop-filter: blur(16px);
+      text-align: center;
+    }
+
+    .quote-text {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 1.08rem;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+
+    .quote-author {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-dim);
     }
 
     /* Toast Notification */
@@ -439,300 +481,358 @@
       transform: translateX(-50%) translateY(100px);
       background: var(--text);
       color: var(--bg);
-      padding: 10px 20px;
+      padding: 12px 24px;
       border-radius: var(--radius-pill);
-      font-size: 0.85rem;
-      font-weight: 500;
-      box-shadow: var(--shadow-lg);
+      font-size: 0.86rem;
+      font-weight: 600;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
       transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      z-index: 100;
+      z-index: 999;
       pointer-events: none;
     }
 
-    #toast.show {
+    #toast.active {
       transform: translateX(-50%) translateY(0);
     }
 
     /* Footer */
-    footer {
-      margin-top: 48px;
+    .bio-footer {
       text-align: center;
-      font-size: 0.82rem;
-      color: var(--text-subtle);
+      padding: 20px 0 10px;
     }
 
-    footer a {
-      color: var(--text-muted);
-      font-weight: 500;
+    .bio-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-dim);
+      text-decoration: none;
+      letter-spacing: 0.02em;
     }
 
-    footer a:hover {
+    .bio-badge:hover {
       color: var(--text);
-      text-decoration: underline;
-    }
-
-    /* Responsive */
-    @media (max-width: 580px) {
-      .container {
-        padding: 32px 18px 60px;
-      }
-      .profile-header {
-        flex-direction: column;
-        text-align: center;
-        gap: 16px;
-      }
-      .location-tag {
-        justify-content: center;
-      }
-      .bio-grid {
-        grid-template-columns: 1fr;
-      }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <!-- Top Bar -->
-    <div class="header-nav">
-      <div class="badge-status">
-        <span class="pulse-dot"></span>
-        <span>Partner @ WestCap &middot; Raleigh, NC</span>
+  <div class="bio-wrapper">
+
+    <!-- Top Status Bar -->
+    <div class="top-bar">
+      <div class="status-pill">
+        <span class="pulse"></span>
+        <span>Raleigh, NC &middot; WestCap</span>
       </div>
-      <button class="theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle Theme">
-        <svg id="moonIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-        <svg id="sunIcon" style="display:none;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Main Bio Header Card -->
-    <div class="profile-card">
-      <div class="profile-header">
-        <div class="avatar-wrapper">
-          <img src="assets/allen-mask.jpg" alt="Allen Mask" class="avatar" />
-        </div>
-        <div class="profile-title">
-          <h1>Allen Mask</h1>
-          <div class="role">Partner at WestCap &middot; Managing Partner, CōLab</div>
-          <div class="location-tag">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            Raleigh, NC &middot; New York &middot; San Francisco
-          </div>
-        </div>
-      </div>
-
-      <p class="bio-text">
-        Investor, operator, and creative strategist. Partner at <strong>WestCap</strong> and Managing Partner of <strong>CōLab</strong>, partnering with visionary founders to build durable enterprises across brand, product marketing, and native AI transformation.
-      </p>
-
-      <div class="actions-grid">
-        <a href="https://www.linkedin.com/in/allenmask/" target="_blank" rel="noopener noreferrer" class="btn-action btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.2a1.65 1.65 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.65 1.65 0 0 0 1.65-1.66A1.65 1.65 0 0 0 7.83 6.2Z"/></svg>
-          LinkedIn
-        </a>
-        <a href="https://westcap.com" target="_blank" rel="noopener noreferrer" class="btn-action btn-secondary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-          WestCap
-        </a>
-        <button onclick="copyEmail()" class="btn-action btn-secondary" title="Copy Email">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          Contact
+      <div class="top-actions">
+        <button class="btn-icon" id="shareBtn" title="Share Profile" aria-label="Share">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+        </button>
+        <button class="btn-icon" id="themeToggle" title="Toggle Theme" aria-label="Theme">
+          <svg id="moonIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg id="sunIcon" style="display:none;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
         </button>
       </div>
     </div>
 
-    <!-- Core Highlights Grid -->
-    <div class="bio-grid">
-      <div class="mini-card">
-        <span class="mini-card-label">Recognition</span>
-        <span class="mini-card-value">Forbes 30 Under 30</span>
-        <span class="mini-card-sub">Marketing & Advertising</span>
+    <!-- Main Profile Hero -->
+    <div class="profile-hero">
+      <div class="avatar-container">
+        <img src="assets/allen-mask.jpg" alt="Allen Mask" class="avatar-img" />
       </div>
-      <div class="mini-card">
-        <span class="mini-card-label">Education</span>
-        <span class="mini-card-value">UNC Chapel Hill</span>
-        <span class="mini-card-sub">Kenan-Flagler Business School</span>
+
+      <div class="name-title-row">
+        <h1>Allen Mask</h1>
+        <span class="verified-check" title="Verified">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </span>
       </div>
-      <div class="mini-card">
-        <span class="mini-card-label">Focus</span>
-        <span class="mini-card-value">Operating Equity & AI</span>
-        <span class="mini-card-sub">Growth-stage tech investments</span>
-      </div>
-      <div class="mini-card">
-        <span class="mini-card-label">Advisory</span>
-        <span class="mini-card-value">AICP Jury & UNC Mentor</span>
-        <span class="mini-card-sub">Creative & Entrepreneurship</span>
+
+      <div class="role-headline">Partner @ WestCap &middot; Managing Partner, CōLab</div>
+
+      <p class="bio-summary">
+        Investor, operator, and creative strategist. Partnering with visionary founders across <strong>growth equity</strong>, <strong>brand</strong>, and <strong>native AI transformation</strong>.
+      </p>
+
+      <!-- Social Row -->
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/allenmask/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.2a1.65 1.65 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.65 1.65 0 0 0 1.65-1.66A1.65 1.65 0 0 0 7.83 6.2Z"/></svg>
+        </a>
+        <a href="https://westcap.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="WestCap">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        </a>
+        <button onclick="copyEmail()" class="social-btn" title="Copy Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </button>
       </div>
     </div>
 
-    <!-- Editorial Callout -->
-    <div class="section-title">Perspective</div>
-    <div class="editorial-card">
-      <div class="editorial-quote">
-        &ldquo;Start where you are. Use what you have. Do what you can. The best platform is the one from which you can serve the most people.&rdquo;
-      </div>
-      <div class="editorial-author">&mdash; Guiding principle on leadership & stewardship</div>
-    </div>
+    <!-- Bio Links Stack -->
+    <div class="links-stack">
 
-    <!-- Experience Section -->
-    <div class="section-title">Track Record & Experience</div>
-    <div class="card">
-      
-      <!-- WestCap -->
-      <div class="experience-item">
-        <div class="exp-header">
-          <span class="exp-company">WestCap &middot; CōLab</span>
-          <span class="exp-date">2020 &ndash; Present</span>
+      <!-- WestCap Link Card -->
+      <a href="https://westcap.com" target="_blank" rel="noopener noreferrer" class="link-card">
+        <div class="link-left">
+          <div class="link-icon-box">🏛️</div>
+          <div class="link-info">
+            <div class="link-title">WestCap Group</div>
+            <div class="link-sub">Partner &middot; Growth Equity & Operations</div>
+          </div>
         </div>
-        <div class="exp-role">Partner &middot; Managing Partner, CōLab</div>
-        <div class="exp-desc">
-          Leads WestCap's operating equity practice and creative studio CōLab. Partners directly with executive leadership across portfolio companies (Addepar, Hopper, Qualia, Dragos, Preply) to scale brand, product go-to-market, and native AI integration.
+        <div class="link-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
         </div>
-        <div class="tag-row">
-          <span class="tag">Growth Equity</span>
-          <span class="tag">AI Transformation</span>
-          <span class="tag">Brand Valuation</span>
-        </div>
-      </div>
+      </a>
 
-      <!-- Sonos -->
-      <div class="experience-item">
-        <div class="exp-header">
-          <span class="exp-company">Sonos</span>
-          <span class="exp-date">Executive Leadership</span>
+      <!-- CōLab Link Card -->
+      <a href="https://westcap.com" target="_blank" rel="noopener noreferrer" class="link-card">
+        <div class="link-left">
+          <div class="link-icon-box">⚡</div>
+          <div class="link-info">
+            <div class="link-title">CōLab Studio</div>
+            <div class="link-sub">Managing Partner &middot; Brand & AI Innovation</div>
+          </div>
         </div>
-        <div class="exp-role">VP, Marketing, Intelligence & Partnerships &middot; Chief of Staff to CEO</div>
-        <div class="exp-desc">
-          Led marketing intelligence, global brand partnerships, and cross-functional operational initiatives directly alongside the CEO during a high-growth scale era.
+        <div class="link-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
         </div>
-      </div>
+      </a>
 
-      <!-- Airbnb -->
-      <div class="experience-item">
-        <div class="exp-header">
-          <span class="exp-company">Airbnb</span>
-          <span class="exp-date">Product Leadership</span>
+      <!-- Harvard Business School Brand Study Card -->
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7227361730037805056/" target="_blank" rel="noopener noreferrer" class="link-card">
+        <div class="link-left">
+          <div class="link-icon-box">📊</div>
+          <div class="link-info">
+            <div class="link-title">Brand as an Enterprise Asset</div>
+            <div class="link-sub">Harvard Business School Study w/ Prof. Josh Lerner</div>
+          </div>
         </div>
-        <div class="exp-role">General Manager &middot; Head of Product Marketing</div>
-        <div class="exp-desc">
-          Founded and scaled Airbnb's global Product Marketing organization. Served as GM on the "Magical Trips" project, the initiative that created and launched <strong>Airbnb Experiences</strong> worldwide.
+        <div class="link-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
         </div>
-      </div>
+      </a>
 
-      <!-- Google -->
-      <div class="experience-item">
-        <div class="exp-header">
-          <span class="exp-company">Google</span>
-          <span class="exp-date">Sales & Brand Strategy</span>
+      <!-- Forbes Recognition Card -->
+      <div class="link-card" style="cursor: default;">
+        <div class="link-left">
+          <div class="link-icon-box">🏆</div>
+          <div class="link-info">
+            <div class="link-title">Forbes 30 Under 30</div>
+            <div class="link-sub">Marketing & Advertising Honoree</div>
+          </div>
         </div>
-        <div class="exp-role">Brand Management & Business Development</div>
-        <div class="exp-desc">
-          Held strategic roles across Google Search, YouTube, Android, and Google Play driving monetization and consumer adoption.
-        </div>
+        <div class="status-pill" style="font-size: 0.72rem; padding: 4px 10px;">Honoree</div>
       </div>
 
-      <!-- Goldman Sachs -->
-      <div class="experience-item">
-        <div class="exp-header">
-          <span class="exp-company">Goldman Sachs</span>
-          <span class="exp-date">Investment Banking</span>
+      <!-- Expandable Background & Career Drawer -->
+      <div class="drawer-card" id="careerDrawer">
+        <div class="drawer-header" onclick="toggleDrawer('careerDrawer')">
+          <div class="drawer-title-group">
+            <div class="link-icon-box">💼</div>
+            <div class="link-info">
+              <div class="link-title">Operating & Leadership Track Record</div>
+              <div class="link-sub">Sonos &middot; Airbnb &middot; Google &middot; Goldman Sachs</div>
+            </div>
+          </div>
+          <div class="drawer-chevron">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
         </div>
-        <div class="exp-role">Analyst, Investment Banking Division</div>
-        <div class="exp-desc">
-          Began career advising high-growth technology and media companies on corporate finance, capital markets, and M&A transactions.
+
+        <div class="drawer-body">
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span class="timeline-company">WestCap &middot; CōLab</span>
+              <span class="timeline-period">2020 &ndash; Present</span>
+            </div>
+            <div class="timeline-role">Partner &middot; Managing Partner, CōLab</div>
+            <div class="timeline-desc">Leading operating equity and creative studio partnering with Addepar, Hopper, Qualia, Dragos, and Preply on brand and AI integration.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span class="timeline-company">Sonos</span>
+              <span class="timeline-period">Executive Team</span>
+            </div>
+            <div class="timeline-role">VP, Marketing & Partnerships &middot; Chief of Staff to CEO</div>
+            <div class="timeline-desc">Directed global intelligence, strategic partnerships, and executive operations during major scale phase.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span class="timeline-company">Airbnb</span>
+              <span class="timeline-period">Product Leadership</span>
+            </div>
+            <div class="timeline-role">General Manager &middot; Head of Product Marketing</div>
+            <div class="timeline-desc">Founded Airbnb's Product Marketing function; GM on the "Magical Trips" project that launched <strong>Airbnb Experiences</strong>.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span class="timeline-company">Google</span>
+              <span class="timeline-period">Sales & Brand</span>
+            </div>
+            <div class="timeline-role">Brand Management & Business Development</div>
+            <div class="timeline-desc">Strategic growth across Google Search, YouTube, Android, and Google Play.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span class="timeline-company">Goldman Sachs</span>
+              <span class="timeline-period">Investment Banking</span>
+            </div>
+            <div class="timeline-role">Analyst, IBD</div>
+            <div class="timeline-desc">M&A and capital markets for technology and media companies.</div>
+          </div>
         </div>
       </div>
 
-    </div>
+      <!-- Expandable Speaking & Community Drawer -->
+      <div class="drawer-card" id="speakingDrawer">
+        <div class="drawer-header" onclick="toggleDrawer('speakingDrawer')">
+          <div class="drawer-title-group">
+            <div class="link-icon-box">🎙️</div>
+            <div class="link-info">
+              <div class="link-title">Speaking, Jury & Advisory</div>
+              <div class="link-sub">AICP &middot; UNC Kenan-Flagler &middot; Podcasts</div>
+            </div>
+          </div>
+          <div class="drawer-chevron">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+        </div>
 
-    <!-- Selected Insights / Research -->
-    <div class="section-title">Selected Research & Writing</div>
-    <div class="card">
-      <div class="experience-item">
-        <div class="exp-header">
-          <span class="exp-company">Brand as an Enterprise Asset</span>
-          <span class="exp-date">Harvard Business School & WestCap</span>
-        </div>
-        <div class="exp-desc">
-          Co-published with HBS Professor Josh Lerner and Tracksuit: empirical research proving that every 10% increase in brand awareness drives a 17% increase in total enterprise valuation.
+        <div class="drawer-body">
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span class="timeline-company">AICP Awards</span>
+              <span class="timeline-period">Jury Member</span>
+            </div>
+            <div class="timeline-desc">Jury member celebrating commercial and creative craft in media and production.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span class="timeline-company">UNC Kenan-Flagler Business School</span>
+              <span class="timeline-period">Entrepreneurs Lab & Mentor</span>
+            </div>
+            <div class="timeline-desc">Guest speaker and mentor on purpose, stewardship, and building defensible platforms.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span class="timeline-company">Raleigh-Durham Startup Week</span>
+              <span class="timeline-period">Keynote & Fireside</span>
+            </div>
+            <div class="timeline-desc">Actionable principles for early-stage founders navigating product, focus, and AI.</div>
+          </div>
         </div>
       </div>
-      <div class="experience-item">
-        <div class="exp-header">
-          <span class="exp-company">Operating in the Age of AI</span>
-          <span class="exp-date">WestCap Summit & Keynotes</span>
+
+      <!-- Quote Card -->
+      <div class="quote-block">
+        <div class="quote-text">
+          &ldquo;Start where you are. Use what you have. Do what you can. The best platform is the one from which you can serve the most people.&rdquo;
         </div>
-        <div class="exp-desc">
-          Insights on context as the durable moat, shifting from commoditized models to proprietary operational workflows that compound over time.
-        </div>
+        <div class="quote-author">Guiding Principle</div>
       </div>
+
+      <!-- Contact Button -->
+      <button onclick="copyEmail()" class="link-card" style="width: 100%; border: 1px dashed var(--card-border); cursor: pointer;">
+        <div class="link-left">
+          <div class="link-icon-box">✉️</div>
+          <div class="link-info">
+            <div class="link-title">Get in Touch</div>
+            <div class="link-sub">Tap to copy email (allen@westcap.com)</div>
+          </div>
+        </div>
+        <div class="link-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+      </button>
+
     </div>
 
     <!-- Footer -->
-    <footer>
-      <p>&copy; 2026 Allen Mask &middot; Published on <a href="https://github.com/allenmask" target="_blank" rel="noopener">GitHub</a> &middot; <a href="https://allenmask.com">allenmask.com</a></p>
-    </footer>
+    <div class="bio-footer">
+      <a href="https://allenmask.com" class="bio-badge">
+        <span>&copy; 2026 Allen Mask &middot; allenmask.com</span>
+      </a>
+    </div>
 
   </div>
 
-  <div id="toast">Copied to clipboard!</div>
+  <div id="toast">Email copied to clipboard!</div>
 
   <script>
-    // Theme toggle
+    // Theme Toggle
     const toggleBtn = document.getElementById('themeToggle');
     const moonIcon = document.getElementById('moonIcon');
     const sunIcon = document.getElementById('sunIcon');
 
-    const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     setTheme(savedTheme);
 
     toggleBtn.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      setTheme(newTheme);
+      const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+      setTheme(current === 'dark' ? 'light' : 'dark');
     });
 
     function setTheme(theme) {
-      if (theme === 'dark') {
+      if (theme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        moonIcon.style.display = 'block';
+        sunIcon.style.display = 'none';
+      } else {
         document.documentElement.setAttribute('data-theme', 'dark');
         moonIcon.style.display = 'none';
         sunIcon.style.display = 'block';
-      } else {
-        document.documentElement.removeAttribute('data-theme');
-        moonIcon.style.display = 'block';
-        sunIcon.style.display = 'none';
       }
       localStorage.setItem('theme', theme);
     }
 
-    // Email copy
+    // Accordion Drawer Toggle
+    function toggleDrawer(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('open');
+    }
+
+    // Email Copy & Feedback
     function copyEmail() {
       const email = 'allen@westcap.com';
       navigator.clipboard.writeText(email).then(() => {
-        showToast('Email (allen@westcap.com) copied to clipboard');
+        showToast('allen@westcap.com copied to clipboard!');
       }).catch(() => {
         window.location.href = 'mailto:' + email;
       });
     }
 
+    // Share Profile
+    document.getElementById('shareBtn').addEventListener('click', async () => {
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: 'Allen Mask',
+            text: 'Partner at WestCap & Managing Partner, CōLab',
+            url: window.location.href,
+          });
+        } catch (err) {}
+      } else {
+        navigator.clipboard.writeText(window.location.href);
+        showToast('Link copied to clipboard!');
+      }
+    });
+
     function showToast(msg) {
       const toast = document.getElementById('toast');
       toast.textContent = msg;
-      toast.classList.add('show');
+      toast.classList.add('active');
       setTimeout(() => {
-        toast.classList.remove('show');
+        toast.classList.remove('active');
       }, 2500);
     }
   </script>
