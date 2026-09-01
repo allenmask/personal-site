@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allen Mask | Partner at WestCap & Managing Partner, CōLab</title>
+  <meta name="description" content="Personal site of Allen Mask — Partner at WestCap, Managing Partner at CōLab, former leader at Sonos, Airbnb, and Google. Forbes 30 Under 30." />
+  <meta property="og:title" content="Allen Mask | Partner at WestCap & Managing Partner, CōLab" />
+  <meta property="og:description" content="Investor, operator, and creative strategist working at the intersection of capital, brand, and AI transformation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://allenmask.com" />
+  <meta property="og:image" content="https://allenmask.com/assets/allen-mask.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #fafafa;
+      --bg-card: #ffffff;
+      --bg-card-hover: #fcfcfc;
+      --border: #e7e5e4;
+      --border-subtle: #f0eeec;
+      --text: #1c1917;
+      --text-muted: #57534e;
+      --text-subtle: #78716c;
+      --accent: #18181b;
+      --accent-hover: #27272a;
+      --accent-bg: #f4f4f5;
+      --tag-bg: #f5f5f4;
+      --tag-text: #44403c;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --radius-pill: 9999px;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-serif: 'Newsreader', Georgia, serif;
+    }
+
+    [data-theme="dark"] {
+      --bg: #09090b;
+      --bg-card: #121215;
+      --bg-card-hover: #18181c;
+      --border: #27272a;
+      --border-subtle: #1f1f23;
+      --text: #f4f4f5;
+      --text-muted: #a1a1aa;
+      --text-subtle: #71717a;
+      --accent: #ffffff;
+      --accent-hover: #e4e4e7;
+      --accent-bg: #27272a;
+      --tag-bg: #18181b;
+      --tag-text: #d4d4d8;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 10px 20px -3px rgba(0, 0, 0, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    /* Container */
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    /* Top Navigation / Controls */
+    .header-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .badge-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      background-color: #10b981;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+      }
+    }
+
+    .theme-toggle {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .theme-toggle:hover {
+      color: var(--text);
+      border-color: var(--text-subtle);
+      transform: translateY(-1px);
+    }
+
+    /* Bio Section */
+    .profile-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .avatar {
+      width: 104px;
+      height: 104px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 2px solid var(--border);
+      box-shadow: var(--shadow-md);
+      display: block;
+    }
+
+    .profile-title h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+
+    .profile-title .role {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .location-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 8px;
+      font-size: 0.82rem;
+      color: var(--text-subtle);
+    }
+
+    .bio-text {
+      font-size: 1.02rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+
+    .bio-text strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* Action Buttons / Social Links */
+    .actions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--text);
+      color: var(--bg);
+      border: 1px solid var(--text);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-secondary {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: var(--accent-bg);
+      border-color: var(--text-subtle);
+      transform: translateY(-1px);
+    }
+
+    /* Content Cards / Sections */
+    .section-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-subtle);
+      margin: 36px 0 16px;
+      padding-left: 4px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-subtle);
+    }
+
+    /* Experience Timeline Item */
+    .experience-item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .experience-item:first-child {
+      padding-top: 0;
+    }
+
+    .experience-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .exp-company {
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .exp-date {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-subtle);
+    }
+
+    .exp-role {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .exp-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-top: 4px;
+    }
+
+    /* Tags */
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border-radius: var(--radius-pill);
+      font-size: 0.78rem;
+      font-weight: 500;
+    }
+
+    /* Editorial Highlight Card */
+    .editorial-card {
+      border-left: 3px solid var(--text);
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .editorial-quote {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .editorial-author {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    /* Grid of Quick Bio Cards */
+    .bio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .mini-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .mini-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--text-subtle);
+    }
+
+    .mini-card-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-subtle);
+    }
+
+    .mini-card-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.35;
+    }
+
+    .mini-card-sub {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    /* Toast Notification */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--text);
+      color: var(--bg);
+      padding: 10px 20px;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 500;
+      box-shadow: var(--shadow-lg);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 100;
+      pointer-events: none;
+    }
+
+    #toast.show {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 48px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-subtle);
+    }
+
+    footer a {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      color: var(--text);
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 580px) {
+      .container {
+        padding: 32px 18px 60px;
+      }
+      .profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+      }
+      .location-tag {
+        justify-content: center;
+      }
+      .bio-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Top Bar -->
+    <div class="header-nav">
+      <div class="badge-status">
+        <span class="pulse-dot"></span>
+        <span>Partner @ WestCap &middot; Raleigh, NC</span>
+      </div>
+      <button class="theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle Theme">
+        <svg id="moonIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg id="sunIcon" style="display:none;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Main Bio Header Card -->
+    <div class="profile-card">
+      <div class="profile-header">
+        <div class="avatar-wrapper">
+          <img src="assets/allen-mask.jpg" alt="Allen Mask" class="avatar" />
+        </div>
+        <div class="profile-title">
+          <h1>Allen Mask</h1>
+          <div class="role">Partner at WestCap &middot; Managing Partner, CōLab</div>
+          <div class="location-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Raleigh, NC &middot; New York &middot; San Francisco
+          </div>
+        </div>
+      </div>
+
+      <p class="bio-text">
+        Investor, operator, and creative strategist. Partner at <strong>WestCap</strong> and Managing Partner of <strong>CōLab</strong>, partnering with visionary founders to build durable enterprises across brand, product marketing, and native AI transformation.
+      </p>
+
+      <div class="actions-grid">
+        <a href="https://www.linkedin.com/in/allenmask/" target="_blank" rel="noopener noreferrer" class="btn-action btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.2a1.65 1.65 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.65 1.65 0 0 0 1.65-1.66A1.65 1.65 0 0 0 7.83 6.2Z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://westcap.com" target="_blank" rel="noopener noreferrer" class="btn-action btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          WestCap
+        </a>
+        <button onclick="copyEmail()" class="btn-action btn-secondary" title="Copy Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Contact
+        </button>
+      </div>
+    </div>
+
+    <!-- Core Highlights Grid -->
+    <div class="bio-grid">
+      <div class="mini-card">
+        <span class="mini-card-label">Recognition</span>
+        <span class="mini-card-value">Forbes 30 Under 30</span>
+        <span class="mini-card-sub">Marketing & Advertising</span>
+      </div>
+      <div class="mini-card">
+        <span class="mini-card-label">Education</span>
+        <span class="mini-card-value">UNC Chapel Hill</span>
+        <span class="mini-card-sub">Kenan-Flagler Business School</span>
+      </div>
+      <div class="mini-card">
+        <span class="mini-card-label">Focus</span>
+        <span class="mini-card-value">Operating Equity & AI</span>
+        <span class="mini-card-sub">Growth-stage tech investments</span>
+      </div>
+      <div class="mini-card">
+        <span class="mini-card-label">Advisory</span>
+        <span class="mini-card-value">AICP Jury & UNC Mentor</span>
+        <span class="mini-card-sub">Creative & Entrepreneurship</span>
+      </div>
+    </div>
+
+    <!-- Editorial Callout -->
+    <div class="section-title">Perspective</div>
+    <div class="editorial-card">
+      <div class="editorial-quote">
+        &ldquo;Start where you are. Use what you have. Do what you can. The best platform is the one from which you can serve the most people.&rdquo;
+      </div>
+      <div class="editorial-author">&mdash; Guiding principle on leadership & stewardship</div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="section-title">Track Record & Experience</div>
+    <div class="card">
+      
+      <!-- WestCap -->
+      <div class="experience-item">
+        <div class="exp-header">
+          <span class="exp-company">WestCap &middot; CōLab</span>
+          <span class="exp-date">2020 &ndash; Present</span>
+        </div>
+        <div class="exp-role">Partner &middot; Managing Partner, CōLab</div>
+        <div class="exp-desc">
+          Leads WestCap's operating equity practice and creative studio CōLab. Partners directly with executive leadership across portfolio companies (Addepar, Hopper, Qualia, Dragos, Preply) to scale brand, product go-to-market, and native AI integration.
+        </div>
+        <div class="tag-row">
+          <span class="tag">Growth Equity</span>
+          <span class="tag">AI Transformation</span>
+          <span class="tag">Brand Valuation</span>
+        </div>
+      </div>
+
+      <!-- Sonos -->
+      <div class="experience-item">
+        <div class="exp-header">
+          <span class="exp-company">Sonos</span>
+          <span class="exp-date">Executive Leadership</span>
+        </div>
+        <div class="exp-role">VP, Marketing, Intelligence & Partnerships &middot; Chief of Staff to CEO</div>
+        <div class="exp-desc">
+          Led marketing intelligence, global brand partnerships, and cross-functional operational initiatives directly alongside the CEO during a high-growth scale era.
+        </div>
+      </div>
+
+      <!-- Airbnb -->
+      <div class="experience-item">
+        <div class="exp-header">
+          <span class="exp-company">Airbnb</span>
+          <span class="exp-date">Product Leadership</span>
+        </div>
+        <div class="exp-role">General Manager &middot; Head of Product Marketing</div>
+        <div class="exp-desc">
+          Founded and scaled Airbnb's global Product Marketing organization. Served as GM on the "Magical Trips" project, the initiative that created and launched <strong>Airbnb Experiences</strong> worldwide.
+        </div>
+      </div>
+
+      <!-- Google -->
+      <div class="experience-item">
+        <div class="exp-header">
+          <span class="exp-company">Google</span>
+          <span class="exp-date">Sales & Brand Strategy</span>
+        </div>
+        <div class="exp-role">Brand Management & Business Development</div>
+        <div class="exp-desc">
+          Held strategic roles across Google Search, YouTube, Android, and Google Play driving monetization and consumer adoption.
+        </div>
+      </div>
+
+      <!-- Goldman Sachs -->
+      <div class="experience-item">
+        <div class="exp-header">
+          <span class="exp-company">Goldman Sachs</span>
+          <span class="exp-date">Investment Banking</span>
+        </div>
+        <div class="exp-role">Analyst, Investment Banking Division</div>
+        <div class="exp-desc">
+          Began career advising high-growth technology and media companies on corporate finance, capital markets, and M&A transactions.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Selected Insights / Research -->
+    <div class="section-title">Selected Research & Writing</div>
+    <div class="card">
+      <div class="experience-item">
+        <div class="exp-header">
+          <span class="exp-company">Brand as an Enterprise Asset</span>
+          <span class="exp-date">Harvard Business School & WestCap</span>
+        </div>
+        <div class="exp-desc">
+          Co-published with HBS Professor Josh Lerner and Tracksuit: empirical research proving that every 10% increase in brand awareness drives a 17% increase in total enterprise valuation.
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="exp-header">
+          <span class="exp-company">Operating in the Age of AI</span>
+          <span class="exp-date">WestCap Summit & Keynotes</span>
+        </div>
+        <div class="exp-desc">
+          Insights on context as the durable moat, shifting from commoditized models to proprietary operational workflows that compound over time.
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Allen Mask &middot; Published on <a href="https://github.com/allenmask" target="_blank" rel="noopener">GitHub</a> &middot; <a href="https://allenmask.com">allenmask.com</a></p>
+    </footer>
+
+  </div>
+
+  <div id="toast">Copied to clipboard!</div>
+
+  <script>
+    // Theme toggle
+    const toggleBtn = document.getElementById('themeToggle');
+    const moonIcon = document.getElementById('moonIcon');
+    const sunIcon = document.getElementById('sunIcon');
+
+    const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    setTheme(savedTheme);
+
+    toggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      setTheme(newTheme);
+    });
+
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        moonIcon.style.display = 'none';
+        sunIcon.style.display = 'block';
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+        moonIcon.style.display = 'block';
+        sunIcon.style.display = 'none';
+      }
+      localStorage.setItem('theme', theme);
+    }
+
+    // Email copy
+    function copyEmail() {
+      const email = 'allen@westcap.com';
+      navigator.clipboard.writeText(email).then(() => {
+        showToast('Email (allen@westcap.com) copied to clipboard');
+      }).catch(() => {
+        window.location.href = 'mailto:' + email;
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
